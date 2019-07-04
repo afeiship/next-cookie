@@ -20,3 +20,4 @@ import NxCookie from 'next-cookie';
 
 ## resources
 - https://github.com/js-cookie/js-cookie
+- http://www.w3school.com.cn/js/js_cookies.asp

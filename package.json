@@ -28,6 +28,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^2.1.2",
     "jest": "^23.6.0",
+    "next-defaults": "github:afeiship/next-defaults",
     "next-nice-comments": "github:afeiship/next-nice-comments",
     "uglify-save-license": "^0.4.1",
     "yargs": "^4.7.1"
