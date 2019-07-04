@@ -15,7 +15,7 @@ npm install -S afeiship/next-cookie --registry=https://registry.npm.taobao.org
 | sets  | inObject,inOptions      | set cookie with object;                           |
 | del   | inKey                   | del the key                                       |
 | dels  | inArray                 | del keys                                          |
-| clear |                         | del all cookies                                   |
+| clear | -                       | del all cookies                                   |
 
 ## usage
 ```js
