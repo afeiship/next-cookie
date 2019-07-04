@@ -70,4 +70,19 @@
       expect(res).toEqual({});
     });
   });
+
+  describe('Error usage', function() {
+    beforeAll(() => {
+      NxCookie.clear();
+    });
+
+    test('nx.cookie --- get the not exist key', function() {
+      document.cookie = 'key1=value1;';
+      document.cookie = 'key2=value2;';
+      document.cookie = 'key3=value3;';
+      document.cookie = 'key4=value4;';
+      var res = NxCookie.get('afei');
+      expect(res).toBe('');
+    });
+  });
 })();

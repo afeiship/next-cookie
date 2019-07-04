@@ -2,7 +2,7 @@
  * name: next-cookie
  * url: https://github.com/afeiship/next-cookie
  * version: 1.0.0
- * date: 2019-07-04T05:21:35.620Z
+ * date: 2019-07-04T05:29:40.886Z
  * license: MIT
  */
 
@@ -46,20 +46,20 @@
             return cookie;
           }
         }
+        return '';
       },
       gets: function() {
         var jar = {};
         var cookies = document.cookie ? document.cookie.split('; ') : [];
-        var i = 0;
-        for (; i < cookies.length; i++) {
-          var parts = cookies[i].split('=');
-          var cookie = parts.slice(1).join('=');
 
+        nx.forEach(cookies, function(item) {
+          var parts = item.split('=');
+          var cookie = parts.slice(1).join('=');
           if (cookie.charAt(0) === '"') {
             cookie = cookie.slice(1, -1);
           }
           jar[parts[0]] = cookie;
-        }
+        });
         return jar;
       },
       del: function(inKey) {
