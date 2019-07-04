@@ -1,3 +1,11 @@
+/*!
+ * name: next-cookie
+ * url: https://github.com/afeiship/next-cookie
+ * version: 1.0.0
+ * date: 2019-07-04T04:53:55.743Z
+ * license: MIT
+ */
+
 (function() {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
@@ -55,15 +63,6 @@
       },
       del: function(inKey) {
         this.set(inKey, '', { expires: -1 });
-      },
-      dels: function(inArray) {
-        nx.forEach(
-          inArray,
-          function(index, key) {
-            this.del(key);
-          },
-          this
-        );
       }
     }
   });
@@ -72,3 +71,5 @@
     module.exports = NxCookie;
   }
 })();
+
+//# sourceMappingURL=next-cookie.js.map
