@@ -6,14 +6,33 @@
 npm install -S @feizheng/next-cookie
 ```
 
+
 ## apis
-| api | params | description   |
-|-----|--------|---------------|
-| get | -      | desc balabala |
+| api   | params                  | description                                       |
+| ----- | ----------------------- | ------------------------------------------------- |
+| get   | inKey                   | get single key cookey                             |
+| gets  | -                       | get all key cookey                                |
+| set   | inKey,inValue,inOptions | set cookie with options({ path:'/', expires: ''}) |
+| sets  | inObject,inOptions      | set cookie with object;                           |
+| del   | inKey                   | del the key                                       |
+| dels  | inArray                 | del keys                                          |
+| clear | -                       | del all cookies                                   |
 
 ## usage
 ```js
 import NxCookie from '@feizheng/next-cookie';
 
 // code goes here:
+NxCookie.get
+NxCookie.gets
+NxCookie.set
+NxCookie.sets
+NxCookie.del
+NxCookie.dels
+NxCookie.clear
 ```
+
+## resources
+- https://github.com/js-cookie/js-cookie
+- http://www.w3school.com.cn/js/js_cookies.asp
+- https://stackoverflow.com/que
