@@ -1,5 +1,5 @@
 (function() {
-  var nx = require('next-js-core2');
+  var nx = require('@feizheng/next-js-core2');
   var NxCookie = require('../src/next-cookie');
 
   describe('Baisic test', function() {

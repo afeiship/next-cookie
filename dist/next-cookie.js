@@ -1,14 +1,14 @@
 /*!
- * name: next-cookie
+ * name: @feizheng/next-cookie
  * url: https://github.com/afeiship/next-cookie
  * version: 1.0.0
- * date: 2019-07-04T05:29:40.886Z
+ * date: 2019-11-28T04:24:44.600Z
  * license: MIT
  */
 
 (function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+  var nx = global.nx || require('@feizheng/next-js-core2');
   var DEFAULT_OPTIONS = { path: '/' };
   var EXPIRES_TIME = 'Thu, 01 Jan 1970 00:00:00 GMT';
 
