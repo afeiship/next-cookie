@@ -10,8 +10,10 @@
         var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
         var suffix = 'path=' + options.path + ';';
         var exp = options.expires;
+        var domain = options.domain;
         //@skill: data > -1; but: string<=1
         exp && (suffix += 'expires=' + (exp > -1 ? exp.toUTCString() : exp));
+        domain && (suffix += 'domain=' + domain);
         document.cookie = inKey + '=' + inValue + ';' + suffix;
       },
       sets: function(inObject, inOptions) {
