@@ -3,7 +3,7 @@
  * description: A simple, lightweight JavaScript API for handling browser cookies for next.
  * homepage: https://github.com/afeiship/next-cookie
  * version: 1.0.0
- * date: 2020-11-22 20:36:22
+ * date: 2020-11-22 20:50:21
  * license: MIT
  */
 
