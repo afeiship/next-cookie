@@ -24,7 +24,7 @@ npm install -S @jswork/next-cookie
 
 ## usage
 ```js
-import NxCookie from '@feizheng/next-cookie';
+import NxCookie from '@jswork/next-cookie';
 
 // code goes here:
 NxCookie.get
